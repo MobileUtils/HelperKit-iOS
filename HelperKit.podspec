@@ -5,7 +5,7 @@ spec.authors       = { 'Basheer Ahamed.S' => 'ssbasheerahamed@gmail.com' }
 spec.summary       = 'Helper Extensions for iOS'
 spec.license       = ''
 spec.homepage      = 'https://github.com/MobileUtils'
-spec.source        = { :git => 'https://github.com/MobileUtils/iOSHelperKit' }
+spec.source        = { :git => 'https://github.com/MobileUtils/HelperKit-iOS' }
 
 spec.ios.deployment_target  = '9.0'
 
