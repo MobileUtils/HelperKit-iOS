@@ -140,12 +140,6 @@ public extension Date {
      10:41:02.112                      --> HH:mm:ss.SSS
      */
     
-    func getFormattedDate(format: String) -> String {
-        let dateformat = DateFormatter()
-        dateformat.dateFormat = format
-        return dateformat.string(from: self)
-    }
-    
     func getDetailedDate() -> String {
         return self.convert("dd MMM yyyy hh:mm a")
     }
@@ -155,7 +149,6 @@ public extension Date {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = format
         return dateFormatter.string(from: self)
-        
     }
     
     func feedDateToString() -> String {
