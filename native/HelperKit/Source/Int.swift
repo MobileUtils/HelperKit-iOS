@@ -51,6 +51,14 @@ public extension Int {
 }
 
 public extension Int {
+    
+    func toString() -> String {
+        return "\(self)"
+    }
+    
+    func toCGFloat() -> CGFloat {
+        return CGFloat(self)
+    }
 
     var isZero: Bool {
         return self == .zero

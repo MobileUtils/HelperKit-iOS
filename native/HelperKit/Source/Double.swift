@@ -10,6 +10,18 @@ import UIKit
 
 public extension Double {
     
+    func toString() -> String {
+        return "\(self)"
+    }
+    
+    func toInt() -> Int {
+        return Int(self)
+    }
+    
+    func toCGFloat() -> CGFloat {
+        return CGFloat(self)
+    }
+    
     func convertFileSizeFormat() -> String {
         
         return ByteCountFormatter.string(fromByteCount: Int64(self), countStyle: .file)
