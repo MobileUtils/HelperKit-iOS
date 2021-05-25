@@ -93,4 +93,13 @@ public extension Int {
             return String(format: "%02d:%02d:%02d", hour, minute, second)
         }
     }
+    
+    
+    func convertDelimiterFormat() -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        numberFormatter.groupingSize = 3
+        numberFormatter.secondaryGroupingSize = 2
+        return numberFormatter.string(from: NSNumber(value: self)) ?? .defaultValue
+    }
 }
